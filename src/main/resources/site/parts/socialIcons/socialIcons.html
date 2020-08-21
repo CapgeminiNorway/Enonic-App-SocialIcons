@@ -1,0 +1,6 @@
+<div class="social-icons">
+    <h1>Follow us</h1>
+    <a data-th-each="item : ${socialIcons}" data-th-href="${item.url}">
+        <i  data-th-class="${'fab fa-' + item.font}"></i>
+    </a>
+</div>
