@@ -1,6 +1,10 @@
 <div class="social-icons">
     <h1>Follow us</h1>
-    <a data-th-each="item : ${socialIcons}" data-th-href="${item.url}">
-        <i  data-th-class="${'fab fa-' + item.font}"></i>
-    </a>
+    <ul class="social-network social-circle">
+        <li data-th-each="item : ${socialIcons}">
+            <a target="_blank" data-th-href="${item.url}" data-th-title="${item.altText}">
+                <i data-th-class="${'fab fa-' + item.font}"></i>
+            </a>
+        </li>
+    </ul>
 </div>
