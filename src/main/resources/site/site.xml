@@ -9,6 +9,9 @@
       <label>URL</label>
        <help-text>Type in URL for Social Media </help-text>
       <occurrences minimum="1" maximum="1"/>
+      <config>
+        <regexp>https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&amp;=]*)</regexp>
+      </config>
     </input>
     <input name="font" type="TextLine">
       <label>Fontawesome tag</label>
