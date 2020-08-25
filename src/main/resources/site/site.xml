@@ -6,17 +6,22 @@
   <occurrences minimum="0" maximum="0"/> 
   <items>
     <input name="url" type="TextLine">
-      <label>URL</label>
-       <help-text>Type in URL for Social Media </help-text>
+      <label>link/URL</label>
+      <help-text>Type in the hyperlink/url for linking your social media to this icon</help-text>
       <occurrences minimum="1" maximum="1"/>
+      <config>
+        <regexp>https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&amp;=]*)</regexp>
+      </config>
     </input>
     <input name="font" type="TextLine">
-      <label>Fontawesome tag</label>
-    <help-text>Visit FontAwesome and get tags example: facebook-f</help-text>
+      <label>Font awesome tag</label>
+      <help-text>Visit FontAwesome.com and get the icon-tag for an example go to: https://fontawesome.com/icons/facebook-f?style=brands the tag used is: facebook-f</help-text>
       <occurrences minimum="1" maximum="1"/>
     </input>
     <input name="altText" type="TextLine">
-      <label>AltText</label>
+      <label>Alternative text</label>
+      <help-text>This text is is an explanation of what the image or icon represents or redirects to.
+        It's usage is important for providing accessebility such as screen-readers.</help-text>
       <occurrences minimum="1" maximum="1"/>
     </input>
   </items>
