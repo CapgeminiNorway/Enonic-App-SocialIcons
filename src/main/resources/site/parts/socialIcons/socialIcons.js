@@ -6,11 +6,13 @@ var util = require('/lib/util');
 exports.get = function (req) {
   var config = portal.getSiteConfig();
 
-  log.info(JSON.stringify(config));
-
   let model = {};
 
-  model.socialIcons = util.data.forceArray(config.socialIcons);
+  let socialIcons = util.data.forceArray(config.socialIcons);
+  
+  if(socialIcons[0] != null){
+    model.socialIcons = socialIcons;
+  }
 
   const view = resolve('socialIcons.html');
 
