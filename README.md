@@ -52,7 +52,7 @@ If you wish to change the colours of the icons, use the classes `social-network`
 
 | App version | Required XP version |
 | ----------- | ------------------- |
-| 1.0.0 | 7.3.1 |
+| 1.0.0 | 7.0.0 |
 
 
 ## Changelog
