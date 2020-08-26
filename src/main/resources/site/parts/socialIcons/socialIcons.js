@@ -1,28 +1,23 @@
-var portal = require('/lib/xp/portal'); // Import the portal functions
-var thymeleaf = require('/lib/thymeleaf'); // Import the thymeleaf render function
+var portal = require('/lib/xp/portal'); 
+var thymeleaf = require('/lib/thymeleaf'); 
 var util = require('/lib/util');
 
-// Handle GET requests
 exports.get = function (req) {
   var config = portal.getSiteConfig();
-
-  let model = {};
-
-  let socialIcons = util.data.forceArray(config.socialIcons);
-  
-  if(socialIcons[0] != null){
-    model.socialIcons = socialIcons;
-  }
-
-  const view = resolve('socialIcons.html');
 
   var customCss = portal.assetUrl({
     path: 'styles/socialIcons.css'
   });
 
-  // Render a thymeleaf template
+  let model = {};
+  let socialIcons = util.data.forceArray(config.socialIcons);
+  if (socialIcons[0] != null) {
+    model.socialIcons = socialIcons;
+  }
+
+  const view = resolve('socialIcons.html');
   let body = thymeleaf.render(view, model);
-  // Return the result
+  
   return {
     body: body,
     contentType: 'text/html',

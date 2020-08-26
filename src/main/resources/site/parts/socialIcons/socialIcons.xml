@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <part>
-  <display-name>Social Icons</display-name>
-  <form>
-  </form>
+    <display-name>Social Icons</display-name>
+    <description>Display of configured social icons from the Social Icons application configuration.</description>
+    <form>
+    </form>
 </part>
 
  
