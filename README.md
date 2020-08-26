@@ -27,7 +27,7 @@ When selecting the application on the website, use the pencil-icon to configure 
 
 3. Find the desired icon to use on https://www.fontawesome.com and use its name, e.g. "twitter" or "facebook-f". 
 
-4. Write the alternative text that will be shown if the icon won't load. 
+4. Write the alternative text that will be shown in case of screen reader or if the icon won't load. 
 
 5. Apply changes.
 
