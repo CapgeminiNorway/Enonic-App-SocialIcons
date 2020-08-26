@@ -1,6 +1,7 @@
-# Social Icons App for Enonic XP
 
-<img align="right" alt="Social Icons Logo" src="https://via.placeholder.com/100/000000/FFFFFF/?Text=SocialIconsApp" max-width="128">
+# Social Icons App for Enonic XP
+<img align="right" alt="Social Icons Logo" src="/src/main/resources/application.svg" width="128px">
+
 
 This Social Icons App for [Enonic XP](https://github.com/enonic/xp) enables an 
 editor to display a area on their website with connections to their desired 
